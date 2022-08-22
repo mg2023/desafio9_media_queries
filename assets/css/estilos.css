@@ -1,0 +1,190 @@
+ header {
+  grid-area: header;
+  background-color: #25527b;
+}
+
+header > ul.menu_principal {
+  display: none;
+}
+
+
+section#contenido_principal {
+  grid-area: principal;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #012f6b;
+}
+
+main {
+  display: grid;
+  min-height: 100vh;
+  grid-template-areas: 'header'
+                      'principal'
+                      'footer';
+  grid-template-rows: 50px auto 5px;
+}
+
+@media (min-width: 576px) {
+  main {
+    grid-template-areas: 'header principal'
+                        'header principal'
+                        'footer principal';
+    grid-template-columns : 200px auto;
+    grid-template-rows: 50px auto 100px;
+  }
+header > ul.menu_principal {
+  display:block;
+}
+
+  
+}
+
+
+/*
+
+#categorias {
+  font-weight: bold;
+  padding-bottom: 20px;
+  font-size: 18px;
+}
+
+#listado li a{
+    color: black;
+}
+
+#listado li {
+  line-height: 1.5;
+}
+
+#listado a:link{
+    text-decoration: none; 
+}
+
+#listado a:hover {
+    color: #4d9bc2;
+}
+#listado a:visited {    
+    text-decoration: none;
+}
+
+#listado a:active {    
+    text-decoration: none;
+}
+
+#listado span {
+    color: gray;
+}
+
+main {
+  grid-area: main;
+  background-color: #e7e7e7;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 20px;
+  padding: 10px;
+}
+
+.bg {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 280px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.nombre_producto {
+  font-weight: bold;
+  font-size: 24px;
+  padding-top: 10px;
+}
+
+.precio {
+  font-size: 18px;
+  padding-left: 120;
+  padding-right: 120;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#boton {
+  width: 100%;
+  background-color: #25527b;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+
+}
+
+#boton:hover {
+  background-color: #4d9bc2;
+  text-decoration: none;
+}
+
+#boton:focus {
+  background-color: #808080;
+  text-decoration: none;
+}
+
+.imagen1 {
+  background-image: url("../img/cafetera.jfif")
+}
+
+.imagen2 {
+  background-image: url("../img/parka.jfif");
+}
+
+.imagen3 {
+  background-image: url("../img/polo.jfif");
+}
+
+.imagen4 {
+  background-image: url("../img/converse.webp");
+}
+
+.imagen5 {
+  background-image: url("../img/cama.webp");
+}
+
+.imagen6 {
+  background-image: url("../img/secadora.webp");
+}
+
+.imagen7 {
+  background-image: url("../img/celular.webp");
+}
+.imagen8 {
+  background-image: url("../img/silla.webp");
+}
+
+footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-container {
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+    "header header header header"
+    "aside main main main"
+    "footer footer footer footer";
+  grid-template-columns: 140px auto auto;
+  grid-template-rows: 50px auto 50px;
+}
+ */
