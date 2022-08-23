@@ -1,12 +1,15 @@
- header {
+header {
   grid-area: header;
   background-color: #25527b;
+  color : white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 header > ul.menu_principal {
   display: none;
 }
-
 
 section#contenido_principal {
   grid-area: principal;
@@ -20,25 +23,109 @@ footer {
 main {
   display: grid;
   min-height: 100vh;
-  grid-template-areas: 'header'
-                      'principal'
-                      'footer';
+  grid-template-areas:
+    "header"
+    "principal"
+    "footer";
   grid-template-rows: 50px auto 5px;
 }
 
 @media (min-width: 576px) {
   main {
-    grid-template-areas: 'header principal'
-                        'header principal'
-                        'footer principal';
-    grid-template-columns : 200px auto;
+    grid-template-areas:
+      "header principal"
+      "header principal"
+      "footer principal";
+    grid-template-columns: 200px auto;
     grid-template-rows: 50px auto 100px;
   }
-header > ul.menu_principal {
-  display:block;
+  header > ul.menu_principal {
+    display: block;
+  }
+
+  article {
+    grid-template-columns: auto
+
+  }
 }
 
-  
+article {
+  grid-area: main;
+  background-color: #e7e7e7;
+  display: grid;
+  /* grid-template-columns: auto auto auto auto; */
+  gap: 20px;
+  padding: 10px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.bg {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 280px;
+}
+
+#boton {
+  width: 100%;
+  background-color: #25527b;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+
+}
+
+#boton:hover {
+  background-color: #4d9bc2;
+  text-decoration: none;
+}
+
+#boton:focus {
+  background-color: #808080;
+  text-decoration: none;
+}
+
+.imagen1 {
+  background-image: url("../img/amplitube.jpg")
+}
+
+.imagen2 {
+  background-image: url("../img/crybaby.jpg");
+}
+
+.imagen3 {
+  background-image: url("../img/ge300.jpg");
+}
+
+.imagen4 {
+  background-image: url("../img/rat.jpg");
+}
+
+.imagen5 {
+  background-image: url("../img/metalmuff.jpg");
+}
+
+.imagen6 {
+  background-image: url("../img/ocd.jpg");
+}
+
+.imagen7 {
+  background-image: url("../img/plasma.jpg");
+}
+.imagen8 {
+  background-image: url("../img/smallclone.jpg");
 }
 
 
