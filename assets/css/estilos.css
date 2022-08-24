@@ -6,22 +6,12 @@ header {
   justify-content: space-between;
   align-items: center;
   padding-left: 5%;
-  padding-right: 5%;
- 
+  padding-right: 5%; 
 }
 
 header > ul.menu_principal {
   display: none;
 }
-
-/* #icono_guitarra {
-  font-size: 12px;
-  padding-top: 30px;
-  padding-right: 40px;
-  width: max-content;
-  color: white;
-
-} */
 
 section#contenido_principal {
   grid-area: principal;
@@ -41,7 +31,8 @@ section#contenido_principal {
   width: 200px;
   height: 30px;
   padding: 5px;
-
+  border: gray solid 1px;
+  border-radius: 3%;
 }
 
 footer {
@@ -74,71 +65,44 @@ main {
 
   .articulo {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    /* grid-template-rows: auto auto; */
   }
 }
 
-/* scroll-container {
-  display: block;
-  margin: 0 auto;
-  text-align: center;
-}
-
-scroll-container {
-  display: block;
-  width: 350px;
-  height: 500px;
-  overflow-y: scroll;
-  scroll-behavior: smooth;
-}
-scroll-page {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  font-size: 5em;
-} */
-
 article {
-  /* grid-area: main; */
-  background-color: #e7e7e7;
+  background-color: white;
   display: grid;
   grid-template-columns: 1fr;
- /*  grid-template-rows: auto; */
-  /* grid-template-columns: auto auto auto auto; */
   gap: 20px;
   padding: 10px;
-  scroll-behavior: smooth;
 }
 
 .cards {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: white;
-  border: 1px solid black;
+  border: 1px solid gray;
   border-radius: 1%;
-  height: 500px;
 }
 
 .bg {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  height: 250px;
+  height: 230px;
   width: 200px;
 }
 
 .nombre_producto {
   font-weight: bold;
   font-size: 24px;
-  /* padding-top: 10px; */
+  padding-bottom: 10px;
 }
 
 #boton {
-  /* width: 50%; */
-  border-radius: 2%;
+
+  border-radius: 5%;
   background-color: #25527b;
   font-size: 14px;
   color: white;
@@ -147,7 +111,9 @@ article {
   align-items: center;
   justify-content: center;
   height: 30px;
-
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 10px;
 }
 
 #boton:hover {
@@ -192,19 +158,20 @@ article {
 }
 
 
-.pagination {
+.paginacion {
   display: flex;
   justify-content: center;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-.pagination a {
+.paginacion a {
   color: black;
   float: left;
   padding: 8px 16px;
   text-decoration: none;
   border: 1px solid black;
+
 }
 
 footer {
@@ -219,152 +186,3 @@ footer {
 footer > div > i {
   padding: 5px;
 }
-
-
-
-/*
-
-#categorias {
-  font-weight: bold;
-  padding-bottom: 20px;
-  font-size: 18px;
-}
-
-#listado li a{
-    color: black;
-}
-
-#listado li {
-  line-height: 1.5;
-}
-
-#listado a:link{
-    text-decoration: none; 
-}
-
-#listado a:hover {
-    color: #4d9bc2;
-}
-#listado a:visited {    
-    text-decoration: none;
-}
-
-#listado a:active {    
-    text-decoration: none;
-}
-
-#listado span {
-    color: gray;
-}
-
-main {
-  grid-area: main;
-  background-color: #e7e7e7;
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  gap: 20px;
-  padding: 10px;
-}
-
-.bg {
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 300px;
-  width: 280px;
-}
-
-.cards {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  background-color: white;
-}
-
-.nombre_producto {
-  font-weight: bold;
-  font-size: 24px;
-  padding-top: 10px;
-}
-
-.precio {
-  font-size: 18px;
-  padding-left: 120;
-  padding-right: 120;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-#boton {
-  width: 100%;
-  background-color: #25527b;
-  font-size: 18px;
-  color: white;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 30px;
-
-}
-
-#boton:hover {
-  background-color: #4d9bc2;
-  text-decoration: none;
-}
-
-#boton:focus {
-  background-color: #808080;
-  text-decoration: none;
-}
-
-.imagen1 {
-  background-image: url("../img/cafetera.jfif")
-}
-
-.imagen2 {
-  background-image: url("../img/parka.jfif");
-}
-
-.imagen3 {
-  background-image: url("../img/polo.jfif");
-}
-
-.imagen4 {
-  background-image: url("../img/converse.webp");
-}
-
-.imagen5 {
-  background-image: url("../img/cama.webp");
-}
-
-.imagen6 {
-  background-image: url("../img/secadora.webp");
-}
-
-.imagen7 {
-  background-image: url("../img/celular.webp");
-}
-.imagen8 {
-  background-image: url("../img/silla.webp");
-}
-
-footer {
-  grid-area: footer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.grid-container {
-  height: 100vh;
-  display: grid;
-  grid-template-areas:
-    "header header header header"
-    "aside main main main"
-    "footer footer footer footer";
-  grid-template-columns: 140px auto auto;
-  grid-template-rows: 50px auto 50px;
-}
- */
