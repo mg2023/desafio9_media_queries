@@ -56,7 +56,7 @@ main {
     "header"
     "principal"
     "footer";
-  grid-template-rows: 60px auto 5px;
+  grid-template-rows: 60px auto 80px;
 }
 
 @media (min-width: 576px) {
@@ -78,7 +78,7 @@ main {
   }
 }
 
-scroll-container {
+/* scroll-container {
   display: block;
   margin: 0 auto;
   text-align: center;
@@ -97,7 +97,7 @@ scroll-page {
   justify-content: center;
   height: 100%;
   font-size: 5em;
-}
+} */
 
 article {
   /* grid-area: main; */
@@ -190,6 +190,36 @@ article {
 .imagen8 {
   background-image: url("../img/smallclone.jpg");
 }
+
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  border: 1px solid black;
+}
+
+footer {
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color:white;
+}
+
+footer > div > i {
+  padding: 5px;
+}
+
 
 
 /*
