@@ -3,13 +3,25 @@ header {
   background-color: #25527b;
   color : white;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  padding-left: 5%;
+  padding-right: 5%;
+ 
 }
 
 header > ul.menu_principal {
   display: none;
 }
+
+/* #icono_guitarra {
+  font-size: 12px;
+  padding-top: 30px;
+  padding-right: 40px;
+  width: max-content;
+  color: white;
+
+} */
 
 section#contenido_principal {
   grid-area: principal;
@@ -44,7 +56,7 @@ main {
     "header"
     "principal"
     "footer";
-  grid-template-rows: 50px auto 5px;
+  grid-template-rows: 60px auto 5px;
 }
 
 @media (min-width: 576px) {
@@ -66,15 +78,26 @@ main {
   }
 }
 
-/* @media (min-width: 576px) {
-  .articulo {
-    grid-template-columns: 1fr 1fr;
-  }
+scroll-container {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
 }
- */
 
-
-
+scroll-container {
+  display: block;
+  width: 350px;
+  height: 500px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+scroll-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 5em;
+}
 
 article {
   /* grid-area: main; */
@@ -85,6 +108,7 @@ article {
   /* grid-template-columns: auto auto auto auto; */
   gap: 20px;
   padding: 10px;
+  scroll-behavior: smooth;
 }
 
 .cards {
@@ -95,6 +119,7 @@ article {
   background-color: white;
   border: 1px solid black;
   border-radius: 1%;
+  height: 500px;
 }
 
 .bg {

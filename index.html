@@ -22,14 +22,15 @@
   <body>
     <main>
       <header>
-        <h1>Guitar Effects</h1>
+        <div id="icono_guitarra">
+          <h1><i class="fa-brands fa-itunes-note"></i> Guitar Effects</h1>
+        </div>
+        <div id="icono_sandwish"><i class="fa-solid fa-bars"></i></div>
         <ul class="menu_principal">
           <li>autos</li>
           <li>Motos</li>
           <li>Scooters</li>
         </ul>
-        <!-- pendiente icono de auto -->
-        <!-- pendiente icono de menu sandwish -->
       </header>
 
       <section id="contenido_principal">
@@ -46,54 +47,64 @@
         <section>
           <article class="articulo">
             <!-- foto del articulo, modelo y boton de ver mas -->
-            <div class="cards">
-              <div class="imagen1 bg">
-              </div>
-              <div class="nombre_producto">Amplitube</div>
-              <a id="boton" href="">Ver más</a>
-            </div>
-    
-            <div class="cards">
-              <div class="imagen2 bg"></div>
-              <div class="nombre_producto">Cry Baby</div>
-              <a id="boton" href="">Ver más</a>
-            </div>
-    
-            <div class="cards">
-              <div class="imagen3 bg"></div>
-              <div class="nombre_producto">GE-300</div>
-              <a id="boton" href="">Ver más</a>
-            </div>
-    
-            <div class="cards">
-              <div class="imagen4 bg"></div>
-              <div class="nombre_producto">Rat</div>
-              <a id="boton" href="">Ver más</a>
-            </div>
-    
-            <div class="cards">
-              <div class="imagen5 bg"></div>
-              <div class="nombre_producto">Metal Muff</div>
-              <a id="boton" href="">Ver más</a>
-            </div>
-    
-            <div class="cards">
-              <div class="imagen6 bg"></div>
-              <div class="nombre_producto">OCD</div>
-              <a id="boton" href="">Ver más</a>
-            </div>
-    
-            <div class="cards">
-              <div class="imagen7 bg"></div>
-              <div class="nombre_producto">Plasma</div>
-              <a id="boton" href="">Ver más</a>
-            </div>
-    
-            <div class="cards">
-              <div class="imagen8 bg"></div>
-              <div class="nombre_producto">Small clone</div>
-              <a id="boton" href="">Ver más</a>
-            </div>
+            <scroll-container>
+              <scroll-page>
+                <div class="cards">
+                  <div class="imagen1 bg"></div>
+                  <div class="nombre_producto">Amplitube</div>
+                  <a id="boton" href="">Ver más</a>
+                </div>
+              </scroll-page>
+              <scroll-page>
+                <div class="cards">
+                  <div class="imagen2 bg"></div>
+                  <div class="nombre_producto">Cry Baby</div>
+                  <a id="boton" href="">Ver más</a>
+                </div>
+              </scroll-page>
+              <scroll-page>
+                <div class="cards">
+                  <div class="imagen3 bg"></div>
+                  <div class="nombre_producto">GE-300</div>
+                  <a id="boton" href="">Ver más</a>
+                </div>
+              </scroll-page>
+              <scroll-page>
+                <div class="cards">
+                  <div class="imagen4 bg"></div>
+                  <div class="nombre_producto">Rat</div>
+                  <a id="boton" href="">Ver más</a>
+                </div>
+              </scroll-page>
+              <scroll-page>
+                <div class="cards">
+                  <div class="imagen5 bg"></div>
+                  <div class="nombre_producto">Metal Muff</div>
+                  <a id="boton" href="">Ver más</a>
+                </div>
+              </scroll-page>
+              <scroll-page>
+                <div class="cards">
+                  <div class="imagen6 bg"></div>
+                  <div class="nombre_producto">OCD</div>
+                  <a id="boton" href="">Ver más</a>
+                </div>
+              </scroll-page>
+              <scroll-page>
+                <div class="cards">
+                  <div class="imagen7 bg"></div>
+                  <div class="nombre_producto">Plasma</div>
+                  <a id="boton" href="">Ver más</a>
+                </div>
+              </scroll-page>
+              <scroll-page>
+                <div class="cards">
+                  <div class="imagen8 bg"></div>
+                  <div class="nombre_producto">Small clone</div>
+                  <a id="boton" href="">Ver más</a>
+                </div>
+              </scroll-page>
+            </scroll-container>
           </article>
         </section>
         <section>Paginador</section>
