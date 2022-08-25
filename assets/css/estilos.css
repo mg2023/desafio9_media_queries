@@ -27,7 +27,7 @@ section#contenido_principal {
   padding: 5px;
 }
 
-#efectos {
+#filtro-efectos {
   width: 200px;
   height: 30px;
   padding: 5px;
@@ -60,11 +60,32 @@ main {
     grid-template-rows: 50px auto 100px;
   }
   header > ul.menu_principal {
-    display: block;
+    display: block;   
+    padding-top: 10%;
+    line-height: 30px;
+  }
+
+  header {
+    flex-direction:column;
+    justify-content: flex-start;
+    padding-top: 10%;
   }
 
   .articulo {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  #filtro-efectos {
+    width: 90%;    
+  }
+
+  #icono_sandwish {
+    display: none;
+  }
+  
+  footer > div:nth-child(2) {
+    width: 70%;
+    text-align: center;
   }
 }
 
@@ -90,8 +111,8 @@ article {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  height: 230px;
-  width: 200px;
+  height: 190px;
+  width: 170px;
 }
 
 .nombre_producto {
@@ -186,3 +207,4 @@ footer {
 footer > div > i {
   padding: 5px;
 }
+
